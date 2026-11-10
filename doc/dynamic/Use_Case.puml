@@ -1,0 +1,32 @@
+@startuml
+
+User as UC1
+(StartApplication) as UC2
+(Register/Login) as UC3
+(Show_Saved_Movies) as UC4
+(Show_Watched_Movies) as UC5
+(Search_Movie) as UC6
+(Show_Genres) as UC7
+(Pick_A_Movie) as UC8
+(Pick_A_Series) as UC9
+(Play_Movie/Series) as UC10
+(Save_Movie) as UC11
+(Delete_Saved_Movie) as UC12
+
+UC1 --> UC2
+UC2 --> UC3
+UC3 --> UC4
+UC3 --> UC5
+UC3 --> UC6
+UC3 --> UC7
+UC4 --> UC8
+UC5 --> UC8
+UC7 --> UC8
+UC7 --> UC9
+UC8 --> UC10
+UC9 --> UC10
+UC8 --> UC11
+UC6 --> UC10
+UC8 --> UC12
+
+@enduml

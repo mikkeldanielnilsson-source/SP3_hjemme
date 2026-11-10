@@ -1,0 +1,19 @@
+@startuml
+
+object User
+object StreamingPlatform
+object Movie
+object Series
+object Season
+object Episode
+object Genre
+
+StreamingPlatform --> User
+StreamingPlatform --> Movie
+StreamingPlatform --> Series
+StreamingPlatform --> Genre
+Movie --> Genre
+Series --> Season
+Series --> Genre
+Season --> Episode
+@enduml
